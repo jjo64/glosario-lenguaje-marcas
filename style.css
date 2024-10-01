@@ -47,8 +47,8 @@ nav a:hover {
 }
 
 .introduccion img {
-    height: 200px;
-    width: 200px;
+    height: 460px;
+    width: 655px;
 }
 
 .subtitulos ol, ul {
@@ -188,6 +188,16 @@ h6 {
     margin-left: 20px; /* Alinea los párrafos a la izquierda */
     text-align: justify; /* Justifica el texto para un estilo más limpio */
     margin-bottom: 10px;
+}
+
+/* Estilos para centrar imágenes y videos y darles el mismo tamaño */
+.media {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 560px; /* Ancho fijo para imágenes y videos */
+    height: 315px; /* Alto fijo para imágenes y videos */
 }
 
 /* Estilos para la tabla de títulos */
