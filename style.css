@@ -93,6 +93,12 @@ body {
     padding: 10px 0;
 }
 
+.menu-navegacion .logo {
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    margin-right: 20px; /* Espacio entre el logo y el menú */
+}
+
 .menu-navegacion ul {
     padding: 0;
     list-style: none;
@@ -182,5 +188,48 @@ h6 {
     margin-left: 20px; /* Alinea los párrafos a la izquierda */
     text-align: justify; /* Justifica el texto para un estilo más limpio */
     margin-bottom: 10px;
+}
+
+/* Estilos para la tabla de títulos */
+.titulos {
+    margin-top: 20px;
+}
+
+.tabla-titulos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-titulos th, .tabla-titulos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilos para la lista de presidentes */
+.presidentes {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.presidentes li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.presidentes li img {
+    margin-left: 10px;
+    width: 50px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto;
+    border-radius: 5px;
 }
 
