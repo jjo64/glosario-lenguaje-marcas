@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Cuerpo de la pagina*/
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/*Contenedor de la caja*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los elementos al final del contenedor (derecha) */
+}
+
+/*Menu de navegacion*/
+
+.menu-navegacion {
+    /* Elimina float y ajusta el margen derecho */
+    margin-right: 5%;
+    padding-top: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.introduccion {
+    text-align: center;
+}
+
+.introduccion img {
+    height: 200px;
+    width: 200px;
+}
+
+.subtitulos ol, ul {
+    margin: 0 100px;
+}
+
+.subtitulos h2, p {
+    text-align: center;
+}
+
+.secciones h4, p {
+    text-align: center;
+}
+
+.river912{
+   height: 500px;
+   align-items: center;
+   align-content: center;
+   margin-left: 30%;
+}/* style.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Estilos del menú de navegación */
+.menu-navegacion {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.menu-navegacion ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.menu-navegacion ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-navegacion ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-navegacion ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.introduccion {
+    text-align: center;
+}
+
+.introduccion h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.introduccion p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.introduccion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.subtitulos h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subtitulos p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 30px;
+    
+}
+
+.subtitulos img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos específicos */
+h6 {
+    font-size: 1.5em;
+    margin-top: 80px;
+    margin-left: 60px; /* Mueve el h6 un poco a la derecha */
+    color: #555;
+}
+
+/* Estilos para la clase epocas */
+.epocas {
+    margin-bottom: 20px;
+}
+
+.epocas h6 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.epocas p {
+    margin-left: 20px; /* Alinea los párrafos a la izquierda */
+    text-align: justify; /* Justifica el texto para un estilo más limpio */
+    margin-bottom: 10px;
+}
+
