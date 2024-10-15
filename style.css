@@ -112,18 +112,17 @@ body {
     text-align: center;
 }
 
-.menu-navegacion ul li {
-    display: inline;
+.menu-navegacion .direccion ul li {
     margin: 0 15px;
 }
 
-.menu-navegacion ul li a {
+.menu-navegacion .direccion ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-.menu-navegacion ul li a:hover {
+.menu-navegacion .direccion ul li a:hover {
     text-decoration: underline;
 }
 
@@ -476,127 +475,203 @@ footer {
     font-size: 0.9em;
 }
 
+/* Estilos para el menú desplegable en dispositivos móviles */
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
     /* Media Queries para dispositivos móviles y tablets */
-    @media (max-width: 768px) {
-        .container {
-            width: 90%;
-            padding: 0 10px;
-        }
 
-        .menu-navegacion {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 10px;
-        }
-
-        .menu-navegacion ul {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            padding: 0;
-        }
-
-        .menu-navegacion ul li {
-            margin: 10px 0;
-        }
-
-        .introduccion h1 {
-            font-size: 2em;
-            margin: 10px 0;
-        }
-
-        .introduccion p {
-            font-size: 1em;
-            margin: 10px 0;
-        }
-
-        .subtitulos h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-
-        .epocas h6 {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-
-        .epocas p {
-            font-size: 1em;
-            margin: 10px 0;
-        }
-
-        .media {
-            width: 100%;
-            height: auto;
-            margin: 10px 0;
-        }
-
-        .footer-container {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .footer-links, .footer-social {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .footer-links ul {
-            padding: 0;
-        }
-
-        .footer-links ul li {
-            margin-bottom: 10px;
-        }
-
-        .social-icons {
-            justify-content: center;
-        }
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 0 10px;
     }
 
-    @media (max-width: 480px) {
-        .menu-navegacion .logo {
-            width: 40px;
-        }
-
-        .menu-navegacion ul li {
-            margin: 5px 0;
-        }
-
-        .introduccion h1 {
-            font-size: 1.8em;
-            margin: 10px 0;
-        }
-
-        .introduccion p {
-            font-size: 0.9em;
-            margin: 10px 0;
-        }
-
-        .subtitulos h2 {
-            font-size: 1.3em;
-            margin: 10px 0;
-        }
-
-        .epocas h6 {
-            font-size: 1em;
-            margin: 10px 0;
-        }
-
-        .epocas p {
-            font-size: 0.9em;
-            margin: 10px 0;
-        }
-
-        .footer-logo img {
-            width: 80px;
-        }
-
-        .social-icons a img {
-            width: 25px;
-            height: 25px;
-        }
+    .menu-navegacion {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px; /* Reduce el padding para móviles */
+        
     }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .direccion ul {
+        display: none;
+        flex-direction: column;
+        width: auto; /* Ajusta el ancho del menú desplegable */
+        margin-top: 10px;
+        background: #444; /* Fondo ligeramente diferente para el menú desplegable */
+        border-radius: 5px; /* Bordes redondeados para un aspecto más amigable */
+        padding: 10px; /* Añade padding para separar los elementos del menú */
+        position: absolute; /* Posiciona el menú desplegable de forma absoluta */
+        top: 50px; /* Ajusta la posición del menú desplegable */
+        right: 10px; /* Ajusta la posición del menú desplegable */
+    }
+
+    .direccion ul li a {
+        padding: 10px 20px; /* Añade padding a los enlaces para hacerlos más fáciles de tocar */
+        display: block; /* Asegura que los enlaces ocupen todo el ancho del contenedor */
+        border-radius: 5px; /* Bordes redondeados para los enlaces */
+        transition: background 0.3s ease; /* Transición suave para el fondo */
+    }
+
+    .direccion ul li a:hover {
+        background: #555; /* Fondo diferente al pasar el ratón para un efecto visual */
+    }
+
+    #menu-toggle:checked ~ .menu-icon ~ .direccion ul {
+        display: flex;
+    }
+
+    .introduccion {
+        margin-top: 60px; /* Añade margen superior para evitar que el contenido quede oculto detrás del menú */
+    }
+
+    .introduccion h1 {
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    .introduccion p {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .subtitulos h2 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    .epocas h6 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .epocas p {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .media {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .footer-links, .footer-social {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+        padding: 0;
+    }
+
+    .footer-links ul li {
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .historial {
+        padding: 10px;
+        overflow-x: auto; /* Permite el desplazamiento horizontal si la tabla es demasiado ancha */
+    }
+
+    .tabla-historial {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .tabla-historial th, .tabla-historial td {
+        padding: 5px;
+        font-size: 0.9em;
+        white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-navegacion .logo {
+        width: 40px;
+    }
+
+    .menu-navegacion ul li {
+        margin: 5px 0;
+    }
+
+    .introduccion {
+        margin-top: 30px; /* Añade margen superior para evitar que el contenido quede oculto detrás del menú */
+    }
+
+    .introduccion h1 {
+        font-size: 1.8em;
+        margin: 10px 0;
+    }
+
+    .introduccion p {
+        font-size: 0.9em;
+        margin: 10px 0;
+    }
+
+    .subtitulos h2 {
+        font-size: 1.3em;
+        margin: 10px 0;
+    }
+
+    .epocas h6 {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    .epocas p {
+        font-size: 0.9em;
+        margin: 10px 0;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .historial {
+        padding: 10px;
+        overflow-x: auto; /* Permite el desplazamiento horizontal si la tabla es demasiado ancha */
+    }
+
+    .tabla-historial {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .tabla-historial th, .tabla-historial td {
+        padding: 5px;
+        font-size: 0.8em;
+        white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    }
+}
 
